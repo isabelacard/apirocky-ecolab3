@@ -2,10 +2,9 @@ import express from "express";
 import api from "./public/api.js";
 import cors from "cors"
 
-app.use (cors())
-
 const app = express();
 app.use(express.json());
+app.use (cors());
 
 app.get("/api/character", (request, response) => {
     response.send(api.results)
