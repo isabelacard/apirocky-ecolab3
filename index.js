@@ -1,5 +1,8 @@
 import express from "express";
 import api from "./public/api.js";
+import cors from "cors"
+
+app.use (cors())
 
 const app = express();
 app.use(express.json());
